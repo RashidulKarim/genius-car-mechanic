@@ -3,7 +3,7 @@ import { Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
-    const {id, name, price, description, img} = service;
+    const {_id, name, price, description, img} = service;
     return (
         <Col xs={12} sm={12} md={6} lg={4}>
             <div className='text-center my-3 border border-2 rounded'>
@@ -12,7 +12,7 @@ const Service = ({service}) => {
                     <h3>{name}</h3>
                     <h5>Price: {price}</h5>
                     <p>{description}</p>
-                    <Link to={`/book/${id}`}><button className='btn btn-warning'>Book {name.toLowerCase()}</button></Link>
+                    <Link to={`/book/${_id}`}><button className='btn btn-warning'>Book {name.toLowerCase()}</button></Link>
                 </div>
             </div>
         </Col>

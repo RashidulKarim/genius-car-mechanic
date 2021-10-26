@@ -15,7 +15,8 @@ const Header = () => {
       <Nav className="mx-auto">
         <Nav.Link as={HashLink} className='text-white' to="/home#home">Home</Nav.Link>
         <Nav.Link as={HashLink} className='text-white' to="/home#services">Services</Nav.Link>
-        <Nav.Link as={HashLink} className='text-white' to="home/#exparts">Exparts</Nav.Link>
+        <Nav.Link as={HashLink} className='text-white' to="/home#exparts">Exparts</Nav.Link>
+        <Link className='text-white text-decoration-none py-2 px-2' to="/addService">Add Service</Link>
         {
           user.email? <>
             <Nav.Link className='text-white'>{user?.displayName}</Nav.Link>
