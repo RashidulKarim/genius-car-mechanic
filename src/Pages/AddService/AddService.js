@@ -13,7 +13,7 @@ const AddService = () => {
 
     const onSubmit = data => {
         const allInfo = {...data, time}
-        axios.post("http://localhost:5000/services",{
+        axios.post("https://genius-car-mechanic.herokuapp.com/services",{
             allInfo
         })
         .then(res => {

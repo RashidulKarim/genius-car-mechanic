@@ -9,7 +9,7 @@ const SingleService = () => {
     const {services} = useProducts()
     
     const handleDelete =() =>{
-        axios.delete(`http://localhost:5000/service/${id}`)
+        axios.delete(`https://genius-car-mechanic.herokuapp.com/service/${id}`)
         .then(res => {
             if(res.data.deletedCount>0){
                 alert("deleted SuccessFully")
